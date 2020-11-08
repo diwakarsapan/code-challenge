@@ -1,4 +1,4 @@
-<div class="py-5">
+<div class="py-5" data-controller="companies--form">
   <%= form_for @company do |f| %>
 
     <div class="row my-lg-3">
@@ -53,7 +53,8 @@
       </div>
       <div class="col-lg offset-lg-1">
         <div class="form-group">
-          <%= f.text_field :email, class: "form-control", placeholder: "hello@company.com"%>
+          <%= f.text_field :email, class: "form-control #{"is-invalid" if f.object.errors[:email].present?}", placeholder: "hello@company.com", data: { target: "companies--form.emailInput", action: "change->companies--form#validateEmail" }%>
+          <div class="invalid-feedback" data-target="companies--form.emailError"><%= f.object.errors[:email].first %></div>
         </div>
       </div>
     </div>
@@ -72,7 +73,7 @@
     <div class="row my-lg-3">
       <div class="col-6">
         <div class="form-group">
-          <%= f.submit class: "btn btn-success"%>
+          <%= f.submit class: "btn btn-success", data: { target: "companies--form.saveButton" } %>
         </div>
       </div>
       <% if @company.persisted? %>
