@@ -76,6 +76,14 @@ Write up a proposed challenge to add to this repository for assessing developers
 
 _Assessing: Engineering instinct, writing, ability to document up a deliverable concisely._
 
+### **☐ Add API route to access companies**
+
+Provide a REST API that allows accessing companies through `/api/v1/companies` endpoint in both JSON and XML formats.
+
+This will be testing the candidate on the following points. Writing an API is usually a good first step for providing access for single page applications and since this is a pretty common task in Rails, it shouldn't be too complex to be a coding exercise. This will allow candidates to show that they can design an basic API and write good test cases covering the APIs.
+
+_Assessing: Backend  skills, Basic Rails knowledge and established best practices, Basic API design._
+
 ## Bonus Points
 
 - Clean code that follows strong Rails Conventions
