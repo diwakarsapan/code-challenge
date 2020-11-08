@@ -30,7 +30,15 @@ class CompaniesController < ApplicationController
     else
       render :edit
     end
-  end  
+  end
+
+  def destroy
+    if @company.destroy
+      redirect_to companies_path, notice: "Company Deleted"
+    else
+      render :edit, alert: "Failed to delete company"
+    end
+  end
 
   private
 
@@ -50,5 +58,5 @@ class CompaniesController < ApplicationController
   def set_company
     @company = Company.find(params[:id])
   end
-  
+
 end

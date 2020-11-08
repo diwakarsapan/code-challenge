@@ -70,11 +70,18 @@
     </div>
 
     <div class="row my-lg-3">
-      <div class="col">
+      <div class="col-6">
         <div class="form-group">
           <%= f.submit class: "btn btn-success"%>
         </div>
       </div>
+      <% if @company.persisted? %>
+        <div class="col-6">
+          <div class="form-group">
+            <%= link_to "Delete Company", company_path, class: "btn btn-danger", data: { remote: true, method: :delete, confirm: "Are you sure?", disable_with: "Please Wait.." } %>
+          </div>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
