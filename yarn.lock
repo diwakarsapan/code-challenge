@@ -754,6 +754,14 @@
     webpack-cli "^3.3.10"
     webpack-sources "^1.4.3"
 
+"@simonwep/pickr@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@simonwep/pickr/-/pickr-1.7.4.tgz#b14fcd945890388b870cd6db4d6c78d531f25141"
+  integrity sha512-fq7jgKJT21uWGC1mARBHvvd1JYlEf93o7SuVOB4Lr0x/2UPuNC9Oe9n/GzVeg4oVtqMDfh1wIEJpsdOJEZb+3g==
+  dependencies:
+    core-js "^3.6.5"
+    nanopop "^2.1.0"
+
 "@stimulus/core@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@stimulus/core/-/core-1.1.1.tgz#42b0cfe5b73ca492f41de64b77a03980bae92c82"
@@ -1779,6 +1787,11 @@ core-js-compat@^3.6.2:
 core-js@^3.4.0:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+
+core-js@^3.6.5:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.7.0.tgz#b0a761a02488577afbf97179e4681bf49568520f"
+  integrity sha512-NwS7fI5M5B85EwpWuIwJN4i/fbisQUwLwiSNUWeXlkAZ0sbBjLEvLvFLf1uzAUV66PcEPt4xCGCmOZSxVf3xzA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -3925,6 +3938,11 @@ nanomatch@^1.2.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+nanopop@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/nanopop/-/nanopop-2.1.0.tgz#23476513cee2405888afd2e8a4b54066b70b9e60"
+  integrity sha512-jGTwpFRexSH+fxappnGQtN9dspgE2ipa1aOjtR24igG0pv6JCxImIAmrLRHX+zUF5+1wtsFVbKyfP51kIGAVNw==
 
 negotiator@0.6.2:
   version "0.6.2"

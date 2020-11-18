@@ -35,4 +35,8 @@ class CompanyTest < ActiveSupport::TestCase
       assert @company.dup.update(email: "company@getmainstreet.com")
     end
   end
+
+  test "should not save without brand color" do
+    refute @company.update(:brand_color => nil)
+  end
 end

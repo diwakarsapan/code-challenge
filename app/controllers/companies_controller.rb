@@ -50,6 +50,7 @@ class CompaniesController < ApplicationController
       :zip_code,
       :phone,
       :email,
+      :brand_color,
       :owner_id,
       services: []
     )

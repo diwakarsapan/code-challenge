@@ -71,6 +71,30 @@
     </div>
 
     <div class="row my-lg-3">
+      <div class="col-lg-3">
+        <label><strong>Brand Color</strong><br><small class="text-muted">Your brand color</small></label>
+      </div>
+      <div class="col-lg-8 offset-lg-1">
+        <div class="form-row" data-controller="color-picker">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <div data-target="color-picker.picker"></div>
+              <%= f.hidden_field :brand_color, :data => {:target => "color-picker.input" } %>
+            </div>
+          </div>
+          <div class="col-lg-9 company-color-preview">
+            <style data-target="color-picker.style">
+              .bg-success {
+                background-color: <%= @company.brand_color %> !important;
+              }
+            </style>
+            <%= render "companies/page", :company => @company %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-lg-3">
       <div class="col-6">
         <div class="form-group">
           <%= f.submit class: "btn btn-success", data: { target: "companies--form.saveButton" } %>

@@ -71,6 +71,9 @@ class CompaniesControllerTest < ApplicationSystemTestCase
       fill_in("company_zip_code", with: "28173")
       fill_in("company_phone", with: "5553335555")
       fill_in("company_email", with: "new_test_company@getmainstreet.com")
+      execute_script("document.querySelector('.pickr button').click()");
+      execute_script("document.querySelector('.pcr-swatches button').click()");
+      execute_script("document.querySelector('.pcr-save').click()");
       click_button "Create Company"
     end
 
